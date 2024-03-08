@@ -1,0 +1,14 @@
+
+<h1>Busca por nombre de artista y canción</h1>
+<input type="text" [(ngModel)]="artista" placeholder="Artista" aria-label="Dime el artista">
+<input type="text" [(ngModel)]="cancion" placeholder="Canción" aria-label="Dime la canción">
+<button (click)="buscarLetra()">Buscar Canción</button>
+@if (this.datosLetra) {
+<div id="datosLetra">
+    <h2>{{ datosLetra.artista }}</h2>
+    <h3>{{ datosLetra.cancion }}</h3>
+    @for (parrafo of datosLetra.letra.split('\n') ; track parrafo) {
+    <p>{{ parrafo }}</p>
+    }
+</div>
+}

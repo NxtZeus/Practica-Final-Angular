@@ -1,0 +1,13 @@
+<div class="d-flex flex-column align-items-center text-center">
+    <h2>¿Cuántas fotos de perros quieres?</h2>
+    <div>
+        <input type="number" [(ngModel)]="cantidad" placeholder="Número de fotos" aria-label="Número de fotos">
+        <button (click)="buscarPerros()">Buscar</button>
+    </div>
+    
+    @if (this.perros) {
+        @for (perro of perros.data ; track perro) {
+        <img [src]="perro" alt="Perro">
+        }
+    }
+</div>

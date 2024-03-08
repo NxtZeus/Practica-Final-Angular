@@ -21,8 +21,8 @@ export class HeaderComponent {
   // Método para buscar y navegar a la página correspondiente
   buscar() {
     switch (this.search.toLowerCase()) {
-      case 'cats':
-        this.router.navigate(['/cats']);
+      case 'musica':
+        this.router.navigate(['/musica']);
         break;
       case 'clima':
         this.router.navigate(['/clima']);

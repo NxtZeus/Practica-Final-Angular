@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.4);" data-bs-theme="dark">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@
           <a class="nav-link" routerLink="clima"><i class="fa-solid fa-sun"></i> Clima</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="perros"><i class="fa-brands fa-dog"></i> Perros</a>
+          <a class="nav-link" routerLink="perros"><i class="fa-solid fa-dog"></i> Perros</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="paises"><i class="fa-solid fa-globe"></i> Paises</a>
@@ -34,7 +34,7 @@
       <div class="d-flex">
         <input class="form-control me-2" type="search" list="search" [(ngModel)]="search" placeholder="Buscar"
           aria-label="Search">
-        <button class="btn btn-outline-success" (click)="buscar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="btn btn-outline-success" (click)="buscar()"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
       </div>
     </div>
   </div>

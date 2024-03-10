@@ -3,24 +3,30 @@
     background-color: #f9f9f9;
     text-align: center;
 }
+
 section {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 h1 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 p {
-    color: #666;
-    font-size: 16px;
+    color: #000;
+    font-size: 20px;
     margin-bottom: 20px;
 }
+
 input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -29,19 +35,18 @@ input[type="number"] {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #29b8e5;
+    color: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 button:hover {
-    background-color: #0056b3;
-}
-h4 {
-    color: #888;
-    font-size: 14px;
+    background-color: #186a83;
 }

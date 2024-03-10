@@ -9,3 +9,12 @@
 li{
      margin-right: 1em;
 }
+.nav-link{
+     color: white;
+}
+.btn-outline-success {
+     border-color: #29b8e5;
+}
+.btn-outline-success:hover {
+     background-color: #29b8e5;
+}

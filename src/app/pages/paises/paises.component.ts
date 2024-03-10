@@ -24,7 +24,6 @@ export class PaisesComponent implements OnInit {
   paises: any[] = [];
   
   
-  // Aquí puedes usar los métodos del servicio de país, por ejemplo:
   obtenerPaises() {
     this.servicioPais.obtenerPaises(0, 100).subscribe(
       data => {

@@ -1,13 +1,14 @@
-:host {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f8f9fa;
-}
 
+.contenedor {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
 h2 {
     color: #333;
 }
@@ -21,15 +22,16 @@ input[type="number"] {
 button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #29b8e5;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #186a83;
 }
 
 img {
@@ -37,4 +39,5 @@ img {
     max-width: 800px;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
 }

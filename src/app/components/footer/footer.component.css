@@ -3,4 +3,8 @@
      width: 100%;
      justify-content: center;
      align-items: flex-end;
+     color: white;
+   }
+   a{
+     color: white;
    }

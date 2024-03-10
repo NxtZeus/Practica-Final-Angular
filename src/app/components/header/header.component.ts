@@ -4,9 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 @Component({
   selector: 'app-header',
-  // Indica que este componente puede ser utilizado de forma independiente
   standalone: true,
-  // Lista de módulos a importar
   imports: [
     RouterLink,
     FormsModule],
@@ -14,11 +12,8 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  // Variable para almacenar la búsqueda del usuario
   search: string = '';
-  // Inyectamos el servicio Router en el constructor
   constructor(private router: Router) { }
-  // Método para buscar y navegar a la página correspondiente
   buscar() {
     switch (this.search.toLowerCase()) {
       case 'musica':
@@ -27,17 +22,20 @@ export class HeaderComponent {
       case 'clima':
         this.router.navigate(['/clima']);
         break;
-      case 'gitHub':
-        this.router.navigate(['/github']);
+      case 'perros':
+        this.router.navigate(['/perros']);
         break;
-      case 'servidor':
-        this.router.navigate(['/server']);
+      case 'paises':
+        this.router.navigate(['/paises']);
         break;
-      case 'calculadora':
-        this.router.navigate(['/calculadora']);
+      case 'adivinanza':
+        this.router.navigate(['/adivinanza']);
         break;
-      case 'galeria':
-        this.router.navigate(['/galeria']);
+      case 'window':
+        this.router.navigate(['/window']);
+        break;
+      case 'login':
+        this.router.navigate(['/login']);
         break;
       default:
         this.router.navigate(['/home']);

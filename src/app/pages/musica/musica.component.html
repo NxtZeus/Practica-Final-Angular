@@ -1,15 +1,26 @@
+<!-- Sección para buscar la letra de una canción -->
 <section>
     <h1>Busca la letra de una canción</h1>
+    <!-- Input para ingresar el nombre del artista -->
     <input type="text" [(ngModel)]="artista" placeholder="Artista" aria-label="Dime el artista">
+    <!-- Input para ingresar el título de la canción -->
     <input type="text" [(ngModel)]="cancion" placeholder="Canción" aria-label="Dime la canción">
+    <!-- Botón para realizar la búsqueda de la letra -->
     <button (click)="buscarLetra()">Buscar</button>
 </section>
+
+<!-- Verifica si hay datos de la letra disponibles -->
 @if (this.datosLetra) {
-<div id="datosLetra">
-    <h2>{{ datosLetra.artista }}</h2>
-    <h3>{{ datosLetra.cancion }}</h3>
-    @for (parrafo of datosLetra.letra.split('\n') ; track parrafo) {
-    <p style="color: white;" class="text-center">{{ parrafo }}</p>
-    }
-</div>
+    <!-- Si hay datos, muestra la sección con los detalles de la letra -->
+    <div id="datosLetra">
+        <!-- Muestra el nombre del artista -->
+        <h2>{{ datosLetra.artista }}</h2>
+        <!-- Muestra el título de la canción -->
+        <h3>{{ datosLetra.cancion }}</h3>
+        <!-- Utiliza un bucle para iterar sobre las líneas de la letra -->
+        @for (parrafo of datosLetra.letra.split('\n') ; track parrafo) {
+            <!-- Utiliza interpolación para mostrar cada línea de la letra -->
+            <p style="color: white;" class="text-center">{{ parrafo }}</p>
+        }
+    </div>
 }

@@ -1,44 +1,61 @@
+<!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.4);" data-bs-theme="dark">
   <div class="container">
+    <!-- Botón para colapsar la barra de navegación en dispositivos pequeños -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- Contenido de la barra de navegación -->
     <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+      <!-- Lista de elementos de navegación -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Elemento de navegación: Inicio -->
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink='home'><i class="fa-solid fa-house"></i> Inicio</a>
         </li>
+        <!-- Elemento de navegación: Música -->
         <li class="nav-item">
           <a class="nav-link" routerLink="musica"><i class="fa-solid fa-music"></i> Lyrics </a>
         </li>
+        <!-- Elemento de navegación: Clima -->
         <li class="nav-item">
           <a class="nav-link" routerLink="clima"><i class="fa-solid fa-sun"></i> Clima</a>
         </li>
+        <!-- Elemento de navegación: Perros -->
         <li class="nav-item">
           <a class="nav-link" routerLink="perros"><i class="fa-solid fa-dog"></i> Perros</a>
         </li>
+        <!-- Elemento de navegación: Paises -->
         <li class="nav-item">
           <a class="nav-link" routerLink="paises"><i class="fa-solid fa-globe"></i> Paises</a>
         </li>
+        <!-- Elemento de navegación: Adivinanza -->
         <li class="nav-item">
           <a class="nav-link" routerLink="adivinanza"><i class="fa-solid fa-dice-one"></i> Adivinanza</a>
         </li>
+        <!-- Elemento de navegación: Window -->
         <li class="nav-item">
           <a class="nav-link" routerLink="window"><i class="fa-regular fa-window-restore"></i> Window</a>
         </li>
+        <!-- Elemento de navegación: Login -->
         <li class="nav-item">
           <a class="nav-link" routerLink="login"><i class="fa-solid fa-user"></i> Login</a>
         </li>
       </ul>
+      <!-- Barra de búsqueda -->
       <div class="d-flex">
+        <!-- Campo de búsqueda -->
         <input class="form-control me-2" type="search" list="search" [(ngModel)]="search" placeholder="Buscar"
           aria-label="Search">
+        <!-- Botón para realizar la búsqueda -->
         <button class="btn btn-outline-success" (click)="buscar()"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
       </div>
     </div>
   </div>
 </nav>
+
+<!-- Lista de opciones para la búsqueda -->
 <datalist id="search">
   <option value="musica"></option>
   <option value="clima"></option>

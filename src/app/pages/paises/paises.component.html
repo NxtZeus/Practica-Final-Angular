@@ -1,36 +1,47 @@
 <div class="container">
-
-
+  <!-- Lista de países -->
   <div class="pais-list">
+    <!-- Bucle para iterar sobre la lista de países -->
     @for (pais of paises; track pais) {
+    <!-- Detalles de cada país -->
     <div class="pais">
+      <!-- Nombre del país -->
       <h2>{{pais.nombre}}</h2>
+      <!-- Capital del país -->
       <p>Capital: {{pais.capital}}</p>
+      <!-- Población del país -->
       <p>Población: {{pais.poblacion}}</p>
+      <!-- Idioma principal del país -->
       <p>Idioma principal: {{pais.idioma_principal}}</p>
-      <button class="btn btn-danger" (click)="eliminarPais(pais.nombre)"><i
-          class="fa-regular fa-trash-can"></i></button>
+      <!-- Botón para eliminar el país -->
+      <button class="btn btn-danger" (click)="eliminarPais(pais.nombre)"><i class="fa-regular fa-trash-can"></i></button>
     </div>
     }
   </div>
+  <!-- Formulario para agregar un nuevo país -->
   <div class="contenedor mt-4">
     <form [formGroup]="nuevoPais" (ngSubmit)="agregarPais()">
+      <!-- Input para el nombre del país -->
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre del país</label>
         <input type="text" id="nombre" formControlName="nombre" class="form-control" required>
       </div>
+      <!-- Input para la capital del país -->
       <div class="mb-3">
         <label for="capital" class="form-label">Capital</label>
         <input type="text" id="capital" formControlName="capital" class="form-control" required>
       </div>
+      <!-- Input para la población del país -->
       <div class="mb-3">
         <label for="poblacion" class="form-label">Población</label>
         <input type="number" id="poblacion" formControlName="poblacion" class="form-control" required>
       </div>
+      <!-- Input para el idioma principal del país -->
       <div class="mb-3">
         <label for="idioma_principal" class="form-label">Idioma principal</label>
         <input type="text" id="idioma_principal" formControlName="idioma_principal" class="form-control" required>
       </div>
+      <!-- Botón para enviar el formulario -->
       <button type="submit" class="btn boton-paises">Agregar país</button>
     </form>
   </div>

@@ -1,10 +1,17 @@
+<!-- Sección principal del juego "Adivina el número" -->
 <section>
+    <!-- Título del juego -->
     <h1>Adivina el número</h1>
+    <!-- Instrucciones para el jugador -->
     <p>Introduce un número entre 1 y 100:</p>
+    <!-- Campo de entrada para que el jugador ingrese su intento -->
     <input type="number" id="numeroEntrada" #numeroEntrada>
+    <!-- Botón para comprobar el número ingresado -->
     <button (click)="comprobarNumero(+numeroEntrada.value)">Comprobar</button>
   
+    <!-- Mensaje que muestra el resultado de la comprobación -->
     <p>{{ mensaje }}</p>
   
+    <!-- Muestra la cantidad de intentos realizados -->
     <p>Cantidad de intentos: {{ intentos }}</p>
 </section>

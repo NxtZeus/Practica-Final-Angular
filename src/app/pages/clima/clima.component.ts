@@ -2,30 +2,28 @@ import { Component, inject } from '@angular/core';
 import { ClimaService } from '../../services/clima.service';
 import { FormsModule } from '@angular/forms';
 
-
-
 @Component({
-    selector: 'app-clima',
-    templateUrl: './clima.component.html',
-    styleUrls: ['./clima.component.css'],
-    standalone: true,
-    imports: [FormsModule],
+  selector: 'app-clima',
+  templateUrl: './clima.component.html',
+  styleUrls: ['./clima.component.css'],
+  standalone: true,
+  imports: [FormsModule],
 })
 export class ClimaComponent {
 
-    ciudad: string = '';
-    private _climaService = inject(ClimaService);
-    datosClima: any;
+  ciudad: string = ''; // Variable para almacenar el nombre de la ciudad ingresado por el usuario
+  private _climaService = inject(ClimaService); // Inyección del servicio ClimaService
+  datosClima: any; // Variable para almacenar los datos del clima
 
-    buscarCiudad() {
-        this._climaService.buscarClima(this.ciudad).subscribe(
-            (data) => {
-                this.datosClima = this._climaService.procesarDatosClima(data);
-            });
-    }
-
-
+  // Método para buscar el clima de una ciudad
+  buscarCiudad() {
+    this._climaService.buscarClima(this.ciudad).subscribe(
+      (data) => {
+        this.datosClima = this._climaService.procesarDatosClima(data); // Procesa los datos del clima
+      });
+  }
 }
+
 
 /* import { Component, inject } from '@angular/core';
 import { ClimaService } from '../../services/clima.service';

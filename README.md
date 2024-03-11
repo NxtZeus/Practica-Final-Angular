@@ -1,27 +1,44 @@
-# ProyectoFinalAngular
+# Proyecto Angular 17 con APIs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+## Descripción
 
-## Development server
+Este es un proyecto desarrollado con Angular 17 que utiliza varias APIs.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requisitos
 
-## Code scaffolding
+- Node.js
+- Angular 17
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+1. Clona el repositorio del proyecto:
+```bash
+git clone <url_del_repositorio_del_proyecto>
+```
+2. Navega hasta el directorio del proyecto:
+```bash
+cd <nombre_del_directorio_del_proyecto>
+```
+3. Instala las dependencias:
+```bash
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Uso
 
-## Running unit tests
+1. Asegúrate de que el servidor Node.js está en funcionamiento, aquí está el servidor: 
+https://github.com/NxtZeus/Practica-Final-Angular-servidor.git
+2. Inicia la aplicación Angular:
+```bash
+ng serve
+```
+3. Abre un navegador y navega hasta `http://localhost:4200`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## API
 
-## Running end-to-end tests
+Este proyecto utiliza las siguientes APIs:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- API de Música: Devuelve la letra de una canción al indicarle el nombre y el autor de la misma. (Solo funciona con canciones en inglés).
+- API de Países: Permite almacenar países con información sobre estos, es la base de datos almacenada en el servidor node.js de este repositorio: https://github.com/NxtZeus/Practica-Final-Angular-servidor.git
+- API de Perros: Permite mostrar una cantidad de imágenes introducida por el usuario sobre perros.
+- API de Clima: Permite conocer el clima en el momento, introduciendo un lugar.

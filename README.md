@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este es un proyecto desarrollado con Angular 17 que utiliza varias APIs.
+Este es un proyecto desarrollado con Angular 17 que utiliza varias APIs aparte de varios componentes utilizados en un proyecto de componentes en JS como el Login, el juego de Adivinanza y elementos del Window.
 
 ## Requisitos
 

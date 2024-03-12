@@ -13,7 +13,7 @@ Este es un proyecto desarrollado con Angular 17 que utiliza varias APIs aparte d
 
 1. Clona el repositorio del proyecto:
 ```bash
-git clone <url_del_repositorio_del_proyecto>
+git clone https://github.com/NxtZeus/Practica-Final-Angular.git
 ```
 2. Navega hasta el directorio del proyecto:
 ```bash
